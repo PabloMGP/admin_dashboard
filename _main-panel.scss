@@ -1,9 +1,13 @@
+// Main (middle) Panel
 .main-panel {
     width: 50%;
     background-color: rgb(132, 221, 243);
     display: grid;
     grid-template-columns: 10;
-    grid-template-rows: 10;
+    grid-template-rows: 30;
+
+    align-content: center;
+    justify-items: center;
 
     .panel-header {
         grid-column: 1 / 1;
@@ -13,7 +17,6 @@
     .recent {
         grid-column: 1 / 1;
         grid-row: 2 / 2;
-        background-color: red;
     }
 
     .active {
@@ -25,5 +28,71 @@
         grid-column: 3 / 3;
         grid-row: 2 / 2;
     }
+
+    .project-one {
+        grid-column: 1 / 4;
+        grid-row: 3 / 3;
+    }
+
+    .project-two {
+        grid-column: 5 / 7;
+        grid-row: 3 / 3;
+    }
+
+    .project-three {
+        grid-column: 9 / 11;
+        grid-row: 3 / 3;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
+/* Project Titles & Icons */
+.project-icons p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Calendar Title and Dates */
+.calendar-header {
+    grid-column: 1 / 1;
+    grid-row: 7 / 8;
+}
+
+.date {
+    grid-column: 9 / 9;
+    grid-row: 7 / 8;
+}
+
+.calendar-view {
+    grid-column: 1 / span 8;
+    grid-row: 9 / span 10;
+}
+
+.days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.team-updates {
+    grid-column: 1 / span 4;
+    grid-row: 25 / span 30;
+}
+
+.unassigned {
+    grid-column: 5 / span 9;
+    grid-row: 25 / span 30;
+}

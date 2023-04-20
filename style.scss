@@ -1,23 +1,7 @@
+@import "utilities";
 @import "side-panel";
 @import "main-panel";
 @import "info-panel";
-
-$light-color: rgb(89, 157, 212);
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    outline: none;
-    color: black;
-}
 
 /* Main Container */
 .container {
@@ -27,11 +11,11 @@ a {
     align-items: center;
     width: 100%;
     /* Use width property instead of max-width */
- 
+
 
     .navbar {
         background-color: $light-color;
-    
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -45,8 +29,8 @@ a {
         }
 
         .notifications {
-            width: 30px;
-            height: 30px;
+            width: 100px;
+            height: 100px;
             background-repeat: no-repeat;
         }
 
@@ -73,11 +57,4 @@ a {
             gap: 10px;
         }
     }
-}
-
-
-.grid {
-    display: flex;
-    width: 100%;
-    background-color: red;
 }
