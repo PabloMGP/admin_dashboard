@@ -24,6 +24,48 @@ h4 {
   width: 100%;
 }
 
+.navbar {
+  background-color: rgb(89, 157, 212);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 10px;
+}
+.navbar .language {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+.navbar .notifications {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+.navbar .profile-icon {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+.navbar .logo {
+  width: 30%;
+}
+.navbar .search {
+  width: 40%;
+}
+.navbar .user-profile {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.navbar .user-profile img {
+  width: 25px;
+  height: 25px;
+}
+
 .side-panel {
   width: 20%;
   background-color: rgb(196, 151, 151);
@@ -136,51 +178,4 @@ h4 {
 .info-panel {
   width: 30%;
   background-color: purple;
-}
-
-/* Main Container */
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  /* Use width property instead of max-width */
-}
-.container .navbar {
-  background-color: rgb(89, 157, 212);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  /* Use width property instead of max-width */
-}
-.container .navbar .language {
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-}
-.container .navbar .notifications {
-  width: 100px;
-  height: 100px;
-  background-repeat: no-repeat;
-}
-.container .navbar .profile-icon {
-  border: 1px solid black;
-  border-radius: 50%;
-  height: 75px;
-  width: 75px;
-}
-.container .navbar .logo {
-  width: 30%;
-}
-.container .navbar .search {
-  width: 40%;
-}
-.container .navbar .user-profile {
-  width: 20%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
 }/*# sourceMappingURL=style.css.map */
