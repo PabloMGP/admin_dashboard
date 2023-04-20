@@ -1,0 +1,105 @@
+.side-panel {
+  width: 20%;
+  background-color: rgb(196, 151, 151);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.main-panel {
+  width: 50%;
+  background-color: rgb(132, 221, 243);
+  display: grid;
+  grid-template-columns: 10;
+  grid-template-rows: 10;
+}
+.main-panel .panel-header {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+.main-panel .recent {
+  grid-column: 1/1;
+  grid-row: 2/2;
+  background-color: red;
+}
+.main-panel .active {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+.main-panel .urgent {
+  grid-column: 3/3;
+  grid-row: 2/2;
+}
+
+.info-panel {
+  width: 30%;
+  background-color: purple;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* Use width property instead of max-width */
+}
+.container .navbar {
+  background-color: rgb(89, 157, 212);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* Use width property instead of max-width */
+}
+.container .navbar .language {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+.container .navbar .notifications {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+.container .navbar .profile-icon {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+.container .navbar .logo {
+  width: 30%;
+}
+.container .navbar .search {
+  width: 40%;
+}
+.container .navbar .user-profile {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid {
+  display: flex;
+  width: 100%;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */

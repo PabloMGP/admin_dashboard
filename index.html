@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
     <title>Marketing Dashboard</title>
 </head>
+
 <body>
-    
+
     <div class="container">
 
         <div class="navbar">
-            <h1>Marketing Team</h1> 
 
-            <input type="text" placeholder="Search...">
+            <div class="logo">
+                <h1>Marketing Team</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+            </div>
 
-            <div class="language"></div>
+            <div class="user-profile">
+                <a href="#">EN<img class="language" src="./images/chevron-down.svg" alt=""></a>
 
-            <div class="notifications"></div>
+                <img src="./images/bell-badge.svg" alt="" class="notifications">
 
-            <div class="profile-icon"></div>
-            
+                <div class="profile-icon"></div>
+            </div>
+
         </div>
 
         <div class="grid">
 
             <div class="side-panel">
-
+                <p>Dashboard</p>
+                <p>Messages</p>
+                <p>Calendar</p>
+                <p>Profile</p>
+                <p>Upload</p>
+                <p>Settings</p>
             </div>
 
             <div class="main-panel">
-
+                <h2 class="panel-header">Projects</h2>
+                <p class="recent">Recent</p>
+                <p class="active">Active</p>
+                <p class="urgent">Urgent</p>
             </div>
 
-            <div class="info-pabel">
+            <div class="info-panel">
 
             </div>
 
@@ -41,4 +59,5 @@
     </div>
 
 </body>
+
 </html>

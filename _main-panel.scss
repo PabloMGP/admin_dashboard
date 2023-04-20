@@ -1,0 +1,29 @@
+.main-panel {
+    width: 50%;
+    background-color: rgb(132, 221, 243);
+    display: grid;
+    grid-template-columns: 10;
+    grid-template-rows: 10;
+
+    .panel-header {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+    .recent {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+        background-color: red;
+    }
+
+    .active {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+
+    .urgent {
+        grid-column: 3 / 3;
+        grid-row: 2 / 2;
+    }
+}
+
