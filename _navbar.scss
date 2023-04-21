@@ -1,10 +1,12 @@
+@import "utilities";
+
 .navbar {
-    background-color: $light-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     margin: 10px;
+    font-weight: bold;
 
     .language {
         width: 30px;

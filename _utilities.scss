@@ -1,6 +1,9 @@
 /* Defaults & Variables */
 
-$light-color: rgb(89, 157, 212);
+$primary-color: #f0ece2;
+$secondary-color: #dfd3c3;
+$button-color: #c7b198;
+$text-color: #596e79;
 
 * {
     box-sizing: border-box;
@@ -32,11 +35,12 @@ h4 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: $light-color;
+    background-color: $secondary-color;
 }
 
 /* Flex Container */
 .flex {
     display: flex;
     width: 100%;
+    max-height: 90vh;
 }
