@@ -1,8 +1,10 @@
 /* Defaults & Variables */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "lato", sans-serif;
 }
 
 a {
@@ -16,6 +18,16 @@ a {
 
 h4 {
   text-align: center;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(89, 157, 212);
 }
 
 /* Flex Container */
@@ -70,8 +82,27 @@ h4 {
   width: 20%;
   background-color: rgb(196, 151, 151);
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(6, 1fr);
+}
+
+.side-panel img {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+
+.side-panel p {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  margin-right: 250px;
+}
+
+.side-panel p:nth-child(1) {
+  background-color: aqua;
 }
 
 .main-panel {
@@ -130,10 +161,12 @@ h4 {
 /* Project Titles & Icons */
 .project-icons p {
   display: flex;
+  margin-top: 10rem; /* Not optimal, will refactor in the future */
   flex-direction: row;
   width: 100%;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .project-icons img {
@@ -143,18 +176,18 @@ h4 {
 
 /* Calendar Title and Dates */
 .calendar-header {
-  grid-column: 1/1;
-  grid-row: 10/11;
+  grid-column: 1/span 2;
+  grid-row: 10/span 11;
 }
 
 .date {
   grid-column: 8/span 9;
-  grid-row: 10/11;
+  grid-row: 10/span 11;
 }
 
 .calendar-view {
-  grid-column: 1/span 8;
-  grid-row: 12/span 14;
+  grid-column: 2/span 9;
+  grid-row: 11/span 12;
 }
 
 .days {
@@ -166,16 +199,39 @@ h4 {
 }
 
 .team-updates {
-  grid-column: 1/span 4;
+  grid-column: 2/span 4;
   grid-row: 14/span 16;
 }
 
 .unassigned {
-  grid-column: 5/span 9;
+  grid-column: 6/span 8;
   grid-row: 14/span 16;
 }
 
 .info-panel {
   width: 30%;
   background-color: purple;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.panel-header {
+  grid-column: 1/span 2;
+  grid-row: 1;
+}
+
+.card {
+  grid-column: 1/span 3;
+  grid-row: 2/span 4;
+}
+
+.team-stats {
+  grid-column: 1/span 2;
+  grid-row: 5;
+}
+
+.stats {
+  grid-column: 1/span 3;
+  grid-row: 4/span 6;
 }/*# sourceMappingURL=style.css.map */

@@ -2,7 +2,27 @@
     width: 20%;
     background-color: rgb(196, 151, 151);
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
+
+
+    }
+
+.side-panel img {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
 }
 
+.side-panel p {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-right: 250px;
+}
+
+.side-panel p:nth-child(1) {
+    background-color: aqua;
+}

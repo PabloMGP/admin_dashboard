@@ -62,10 +62,12 @@
 /* Project Titles & Icons */
 .project-icons p {
     display: flex;
+    margin-top: 10rem;  /* Not optimal, will refactor in the future */
     flex-direction: row;
     width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .project-icons img {
@@ -75,18 +77,18 @@
 
 /* Calendar Title and Dates */
 .calendar-header {
-    grid-column: 1 / 1;
-    grid-row: 10 / 11;
+    grid-column: 1 / span 2;
+    grid-row: 10 / span 11;
 }
 
 .date {
     grid-column: 8 / span 9;
-    grid-row: 10 / 11;
+    grid-row: 10 / span 11;
 }
 
 .calendar-view {
-    grid-column: 1 / span 8;
-    grid-row: 12 / span 14;
+    grid-column: 2 / span 9;
+    grid-row: 11 / span 12;
 }
 
 .days {
@@ -98,11 +100,11 @@
 }
 
 .team-updates {
-    grid-column: 1 / span 4;
+    grid-column: 2 / span 4;
     grid-row: 14 / span 16;
 }
 
 .unassigned {
-    grid-column: 5 / span 9;
+    grid-column: 6 / span 8;
     grid-row: 14 / span 16;
 }

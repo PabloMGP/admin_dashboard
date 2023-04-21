@@ -1,4 +1,27 @@
 .info-panel {
     width: 30%;
     background-color: purple;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.panel-header {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.card {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 4;
+}
+
+.team-stats {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.stats {
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 6;
 }
