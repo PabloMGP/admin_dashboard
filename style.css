@@ -1,5 +1,24 @@
 /* Defaults & Variables */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+.unassigned, .team-updates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: #c7b198;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.unassigned img, .team-updates img {
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  margin: 0 10px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -41,6 +60,25 @@ h4 {
 }
 
 /* Defaults & Variables */
+.unassigned, .team-updates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: #c7b198;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.unassigned img, .team-updates img {
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  margin: 0 10px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -174,6 +212,25 @@ h4 {
 }
 
 /* Defaults & Variables */
+.unassigned, .team-updates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: #c7b198;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.unassigned img, .team-updates img {
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  margin: 0 10px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -326,27 +383,15 @@ h4 {
 .team-updates {
   grid-column: 3/span 3;
   grid-row: 14/span 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  background-color: #c7b198;
-  border-radius: 12px;
-  padding: 10px;
-  border: 1px solid black;
-}
-
-.team-updates img {
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
-  background-size: contain;
-  margin: 0 10px;
 }
 
 .unassigned {
   grid-column: 7/span 3;
   grid-row: 14/span 1;
+}
+
+/* Defaults & Variables */
+.team-updates, .unassigned {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -357,7 +402,7 @@ h4 {
   border: 1px solid black;
 }
 
-.unassigned img {
+.team-updates img, .unassigned img {
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;
@@ -365,7 +410,6 @@ h4 {
   margin: 0 10px;
 }
 
-/* Defaults & Variables */
 * {
   box-sizing: border-box;
   padding: 0;

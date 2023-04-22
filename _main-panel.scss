@@ -10,7 +10,7 @@
     align-content: center;
     justify-items: center;
     border-radius: 12px;
-    margin: 0 15px 15px 15px;
+    @extend %panel-margin;
 
     .panel-header {
         grid-column: 2 / 2;
@@ -37,52 +37,38 @@
         grid-column: span 4;
         grid-row: 4 / span 3;
         background-image: url("./images/project.jpg");
-        width: 50%;
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 18px;
+        @extend project-size;
     }
 
     .project-two {
         grid-column: span 4;
         grid-row: 4 / span 3;
         background-image: url("./images/project.jpg");
-        width: 50%;
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 18px;
+        @extend project-size;
     }
 
     .project-three {
         grid-column: span 4;
         grid-row: 4 / span 3;
         background-image: url("./images/project.jpg");
-        width: 50%;
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 18px;
+        @extend project-size;
     }
 }
 
 /* Project Titles & Icons */
 .project-icons p {
-    display: flex;
-    margin-top: 10rem;
-    /* Not optimal, will refactor in the future */
+    @extend %flex-centered;
+    margin-top: 10rem; /* Not optimal, will refactor in the future */
     flex-direction: row;
     width: 100%;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
+
+    img {
+        width: 25px;
+        height: 25px;
+    }
 }
 
-.project-icons img {
-    width: 25px;
-    height: 25px;
-}
 
 /* Calendar Title and Dates */
 .calendar-header {
@@ -107,9 +93,7 @@
 }
 
 .days {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-centered;
     gap: 50px;
     text-align: center;
 }
@@ -121,42 +105,20 @@
 .team-updates {
     grid-column: 3 / span 3;
     grid-row: 14 / span 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    background-color: $button-color;
-    border-radius: 12px;
-    padding: 10px;
-    border: 1px solid black;
-}
+    @extend %card-box;
 
-.team-updates img {
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-    margin: 0 10px;
+    img {
+        @extend %mainpanel-bottom-img;
+    }
 }
 
 
 .unassigned {
     grid-column: 7 / span 3;
     grid-row: 14 / span 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    background-color: $button-color;
-    border-radius: 12px;
-    padding: 10px;
-    border: 1px solid black;
-}
+    @extend %card-box;
 
-.unassigned img {
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-    margin: 0 10px;
+    img {
+        @extend %mainpanel-bottom-img;
+    }
 }

@@ -7,9 +7,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(10, 1fr);
     border-radius: 12px;
-    margin: 0 15px 15px 15px;
+    @extend %panel-margin;
 }
 
+// Announcements Section
 .panel-header {
     grid-column: 1 / span 2;
     grid-row: 1;
@@ -28,7 +29,6 @@
     background-color: $button-color;
     border-radius: 12px;
 
-
     p:first-of-type {
         margin-bottom: 15px;
     }
@@ -43,6 +43,8 @@
     }
 }
 
+
+// Team Stats Section
 .card-two {
     margin: 0 10px;
     text-align: center;
