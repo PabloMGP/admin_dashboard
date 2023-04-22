@@ -5,10 +5,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(10, 1fr);
     border-radius: 12px;
-    @extend %panel-margin;
+    margin: 0 15px 15px 15px;
 }
 
-// Announcements Section
+// Anouncements Section
 .panel-header {
     grid-column: 1 / span 2;
     grid-row: 1;
@@ -27,6 +27,7 @@
     background-color: $button-color;
     border-radius: 12px;
 
+
     p:first-of-type {
         margin-bottom: 15px;
     }
@@ -41,10 +42,7 @@
     }
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
 // Team Stats Section
 .card-two {
     margin: 0 10px;

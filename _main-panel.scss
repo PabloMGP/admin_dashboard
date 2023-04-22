@@ -7,12 +7,16 @@
     border-radius: 18px;
 }
 
-%flex-center {
+%card-box {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+    background-color: $button-color;
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid black;
 }
-
 
 // Main (middle) Panel
 .main-panel {
@@ -24,7 +28,7 @@
     align-content: center;
     justify-items: center;
     border-radius: 12px;
-    @extend %panel-margin;
+    margin: 0 15px 15px 15px;
 
     .panel-header {
         grid-column: 2 / 2;
@@ -50,50 +54,40 @@
         grid-column: span 4;
         grid-row: 4 / span 3;
         background-image: url("./images/project.jpg");
-<<<<<<< HEAD
         @extend %project-size;
-=======
-        @extend project-size;
->>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
     }
 
     .project-two {
         grid-column: span 4;
         grid-row: 4 / span 3;
         background-image: url("./images/project.jpg");
-<<<<<<< HEAD
         @extend %project-size;
-=======
-        @extend project-size;
->>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
     }
 
     .project-three {
         grid-column: span 4;
         grid-row: 4 / span 3;
         background-image: url("./images/project.jpg");
-<<<<<<< HEAD
         @extend %project-size;
-=======
-        @extend project-size;
->>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
     }
 }
 
 /* Project Titles & Icons */
 .project-icons p {
-    @extend %flex-centered;
-    margin-top: 10rem; /* Not optimal, will refactor in the future */
+    display: flex;
+    margin-top: 10rem;
+    /* Not optimal, will refactor in the future */
     flex-direction: row;
     width: 100%;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
-
-    img {
-        width: 25px;
-        height: 25px;
-    }
 }
 
+.project-icons img {
+    width: 25px;
+    height: 25px;
+}
 
 /* Calendar Title and Dates */
 .calendar-header {
@@ -118,7 +112,7 @@
 }
 
 .days {
-    @extend %flex-centered;
+    @extend %card-box;
     gap: 50px;
     text-align: center;
 }
@@ -127,55 +121,31 @@
     font-weight: bold;
 }
 
-// Bottom Cards
 .team-updates {
     grid-column: 3 / span 3;
     grid-row: 14 / span 1;
-<<<<<<< HEAD
-    @extend %flex-center;
-    margin: 10px;
-    background-color: $button-color;
-    border-radius: 12px;
-    padding: 10px;
-    border: 1px solid black;
-
-    img {
-        background-repeat: no-repeat;
-        width: 50px;
-        height: 50px;
-        background-size: contain;
-        margin: 0 10px;
-=======
     @extend %card-box;
-
-    img {
-        @extend %mainpanel-bottom-img;
->>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
-    }
 }
+
+.team-updates img {
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    margin: 0 10px;
+}
+
 
 .unassigned {
     grid-column: 7 / span 3;
     grid-row: 14 / span 1;
-<<<<<<< HEAD
-    @extend %flex-center;
-    margin: 10px;
-    background-color: $button-color;
-    border-radius: 12px;
-    padding: 10px;
-    border: 1px solid black;
-
-    img {
-        background-repeat: no-repeat;
-        width: 50px;
-        height: 50px;
-        background-size: contain;
-        margin: 0 10px;
-=======
     @extend %card-box;
+}
 
-    img {
-        @extend %mainpanel-bottom-img;
->>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
-    }
+.unassigned img {
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    margin: 0 10px;
 }

@@ -6,28 +6,15 @@
     margin: 10px;
     font-weight: bold;
 
-<<<<<<< HEAD
-    // Left Side
-=======
     // Left side
->>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
     .logo {
         width: 30%;
     }
 
-<<<<<<< HEAD
-    // Center-Left Side
-    .search {
-        width: 100%;
-        /* Not optimal, will refactor in the future */
-        margin-top: 10px;
-=======
     // Center-left side
     .search {
-        width: 100%;  /* Not optimal, will refactor in the future */
+        width: 100%; /* Not optimal, will refactor in the future */
         margin-top: 10px;
-   
->>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
 
         input {
             border: 1px solid $primary-color;
@@ -35,10 +22,7 @@
             height: 30px;
             padding: 15px 10px;
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
         input::placeholder {
             background-image: url("./images/search.svg");
             background-repeat: no-repeat;
@@ -47,24 +31,7 @@
         }
     }
 
-<<<<<<< HEAD
-    // Right Side
-    .user-profile {
-        width: 20%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .user-profile img {
-        width: 25px;
-        height: 25px;
-    }
-
-=======
     // Right side
->>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
     .language {
         width: 30px;
         height: 30px;
@@ -72,8 +39,8 @@
     }
 
     .notifications {
-        width: 100px;
-        height: 100px;
+        width: 25px;
+        height: 25px;
         background-repeat: no-repeat;
     }
 
@@ -85,9 +52,14 @@
         background-repeat: no-repeat;
     }
 
-<<<<<<< HEAD
+    .logo {
+        width: 30%;
+    }
 
-=======
+    .search {
+        width: 40%;
+    }
+
     .user-profile {
         width: 20%;
         display: flex;
@@ -96,9 +68,8 @@
         gap: 10px;
     }
 
-     img {
+    img {
         width: 25px;
         height: 25px;
     }
->>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
 }
