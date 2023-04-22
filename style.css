@@ -1,5 +1,24 @@
 /* Defaults & Variables */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+.unassigned, .team-updates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: #c7b198;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.unassigned img, .team-updates img {
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  margin: 0 10px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -40,6 +59,69 @@ h4 {
   max-height: 90vh;
 }
 
+<<<<<<< HEAD
+=======
+/* Defaults & Variables */
+.unassigned, .team-updates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: #c7b198;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.unassigned img, .team-updates img {
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  margin: 0 10px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "lato", sans-serif;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+
+h4 {
+  text-align: center;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #dfd3c3;
+}
+
+/* Flex Container */
+.flex {
+  display: flex;
+  width: 100%;
+  max-height: 90vh;
+}
+
+>>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -124,10 +206,38 @@ h4 {
 .side-panel p:nth-child(1) {
   background-color: aqua;
 }
+<<<<<<< HEAD
 .side-panel img {
   width: 35px;
   height: 35px;
   margin: 10px;
+=======
+
+/* Defaults & Variables */
+.unassigned, .team-updates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: #c7b198;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.unassigned img, .team-updates img {
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  margin: 0 10px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+>>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
 }
 
 .main-panel .project-three, .main-panel .project-two, .main-panel .project-one {
@@ -240,6 +350,7 @@ h4 {
 .team-updates {
   grid-column: 3/span 3;
   grid-row: 14/span 1;
+<<<<<<< HEAD
   margin: 10px;
   background-color: #c7b198;
   border-radius: 12px;
@@ -252,18 +363,35 @@ h4 {
   height: 50px;
   background-size: contain;
   margin: 0 10px;
+=======
+>>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
 }
 
 .unassigned {
   grid-column: 7/span 3;
   grid-row: 14/span 1;
+<<<<<<< HEAD
+=======
+}
+
+/* Defaults & Variables */
+.team-updates, .unassigned {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
   margin: 10px;
   background-color: #c7b198;
   border-radius: 12px;
   padding: 10px;
   border: 1px solid black;
 }
+<<<<<<< HEAD
 .unassigned img {
+=======
+
+.team-updates img, .unassigned img {
+>>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;
@@ -271,6 +399,49 @@ h4 {
   margin: 0 10px;
 }
 
+<<<<<<< HEAD
+=======
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "lato", sans-serif;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+
+h4 {
+  text-align: center;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #dfd3c3;
+}
+
+/* Flex Container */
+.flex {
+  display: flex;
+  width: 100%;
+  max-height: 90vh;
+}
+
+>>>>>>> d7a5329ea00ac42d77b5bc8a486f8e3ed729ef83
 .info-panel {
   width: 30%;
   background-color: #f0ece2;
