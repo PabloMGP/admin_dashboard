@@ -33,7 +33,22 @@
     }
 
     .search {
-        width: 40%;
+        width: 100%;  /* Not optimal, will refactor in the future */
+        margin-top: 10px;
+   
+
+        input {
+            border: 1px solid $primary-color;
+            border-radius: 12px;
+            height: 30px;
+            padding: 15px 10px;
+        }
+        input::placeholder {
+            background-image: url("./images/search.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-left: 20px;
+        }
     }
 
     .user-profile {

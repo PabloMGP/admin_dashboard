@@ -110,7 +110,26 @@ h4 {
   width: 30%;
 }
 .navbar .search {
-  width: 40%;
+  width: 100%; /* Not optimal, will refactor in the future */
+  margin-top: 10px;
+}
+.navbar .search input {
+  border: 1px solid #f0ece2;
+  border-radius: 12px;
+  height: 30px;
+  padding: 15px 10px;
+}
+.navbar .search input::-moz-placeholder {
+  background-image: url("./images/search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 20px;
+}
+.navbar .search input::placeholder {
+  background-image: url("./images/search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 20px;
 }
 .navbar .user-profile {
   width: 20%;
@@ -256,7 +275,8 @@ h4 {
 /* Project Titles & Icons */
 .project-icons p {
   display: flex;
-  margin-top: 10rem; /* Not optimal, will refactor in the future */
+  margin-top: 10rem;
+  /* Not optimal, will refactor in the future */
   flex-direction: row;
   width: 100%;
   justify-content: center;
