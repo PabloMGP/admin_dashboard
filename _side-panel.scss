@@ -7,23 +7,23 @@
     font-weight: bold;
     margin: 0 15px 15px 15px;
     border-radius: 12px;
-}
 
-.side-panel img {
-    width: 35px;
-    height: 35px;
-    margin: 10px;
-}
+    p {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        margin-right: 250px;
+    }
 
-.side-panel p {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    margin-right: 250px;
-}
+    p:nth-child(1) {
+        background-color: aqua;
+    }
 
-.side-panel p:nth-child(1) {
-    background-color: aqua;
+    img {
+        width: 35px;
+        height: 35px;
+        margin: 10px;
+    }
 }
