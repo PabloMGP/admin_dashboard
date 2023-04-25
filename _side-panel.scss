@@ -18,12 +18,13 @@
         display: flex;
         justify-content: left;
         align-items: center;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-        margin-right: 250px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        margin: 40px 250px 40px 0;
     }
 
     p:nth-child(1) {
         background-color: aqua;
+        padding-right: 20px;
     }
 }
