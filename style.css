@@ -240,6 +240,14 @@ h4 {
 .days {
   gap: 50px;
   text-align: center;
+  padding: 10px 15px;
+}
+
+.days > .day:nth-child(2) {
+  background-color: #596e79;
+  border-radius: 12px;
+  padding: 10px;
+  color: white;
 }
 
 .day p:nth-child(2) {

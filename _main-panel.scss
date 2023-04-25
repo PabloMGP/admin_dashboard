@@ -115,6 +115,14 @@
     @extend %card-box;
     gap: 50px;
     text-align: center;
+    padding: 10px 15px;
+}
+
+.days>.day:nth-child(2) {
+    background-color: $text-color;
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
 }
 
 .day p:nth-child(2) {
